@@ -10,6 +10,7 @@ import org.springframework.web.multipart.MaxUploadSizeExceededException;
 
 @Component
 @RestControllerAdvice
+//파일을 업로드하는 도중에 예외가 발생하면 호출되는 메소드를 소유한 Class
 public class FileUploadFailedException {
     @ExceptionHandler(MaxUploadSizeExceededException.class)
     protected ResponseEntity<ErrorResponse>

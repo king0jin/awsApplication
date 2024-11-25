@@ -48,7 +48,7 @@ public class AwsS3ServiceImpl implements AwsS3Service {
     }
 
     //파일 존재 여부를 확인하여 리턴하는 메소드
-    private  boolean validateFileExists(MultipartFile multipartFile) {
+    private boolean validateFileExists(MultipartFile multipartFile) {
         boolean result = true;
         if (multipartFile.isEmpty()) {
             result = false;
